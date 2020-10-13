@@ -31,16 +31,17 @@ a {
     }
 
     .header__content-container {
-        max-width: 1239px;
+        max-width: 1240px;
         margin: 0 auto;
         display: flex;
-        gap: 128px;
+        
     }
     .header__logo {
         height: 135px;
         display: flex;
         align-items: center;
         gap: 25px;
+        margin-right: auto;
     }
 
     .header__title {
@@ -54,6 +55,16 @@ a {
     .header__right-side {
         display: flex;
         flex-direction: column;
+       
+        
+    }
+    .header__top-right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 46px;
+        color: #ffffff;
+        
     }
     .shopping {
         //font-family: Lato;
@@ -63,12 +74,24 @@ a {
         line-height: 16px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-        height: 46px;
         color: #ffffff;
     }
     .cart_icon {
         margin-right: 13px;
+    }
+    .cart_count {
+        width: 27px;
+        height: 27px;
+        background-color: #d21111;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        margin-left: 16px;
     }
     .header__content-ul {
         display: flex;
@@ -89,22 +112,6 @@ a {
         font-size: 16px;
         line-height: 19px;
         color: #ffffff;
-
-        /*         &::after {
-            content: "";
-            transition: all 0.3s ease 0s;
-            -webkit-transition: all 0.3s ease 0s;
-            width: 0;
-            border-bottom: 5px solid rgba(255, 255, 255, 0.4);
-            position: absolute;
-            left: -12.5%;
-            bottom: -3px;
-            visibility: hidden;
-        }
-        &:hover::after {
-            visibility: visible;
-            width: 125%;
-        } */
     }
 }
 
@@ -202,11 +209,11 @@ a {
     }
     .slick-dots {
         width: 70px;
-        height: 16px;
+        height: 14px;
         display: flex;
-        justify-content: space-between;
+        gap: 10px;
         position: absolute;
-        bottom: 25px;
+        bottom: 34px;
         left: 50%;
         transform: translateX(-50%);
         li button {
@@ -245,7 +252,7 @@ a {
     .products__item {
         width: 295px;
         height: 375px;
-        border: 1px solid #E9E9E9;
+        border: 1px solid #e9e9e9;
         margin-bottom: 21px;
         padding: 29px 24px 46px;
         text-align: left;
@@ -298,7 +305,7 @@ a {
 .copyright {
     color: #ffffff;
 }
-.footer__list-link{
+.footer__list-link {
     color: rgba(255, 255, 255, 0.7);
     position: relative;
     z-index: 2;
@@ -311,6 +318,5 @@ a {
         height: 1px;
         left: 0;
         z-index: -1;
-    
     }
 }
