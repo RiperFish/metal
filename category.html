@@ -22,14 +22,28 @@
                 <div class="header__content-container">
                     <!-- LOGO -->
                     <div class="header__logo">
+                        <button class="menu-toggle"></button>
                         <a href="index.html" class="logo"><img class="logo__img" src="img/logo.svg" alt=""
                                 srcset=""></a>
                         <a href="index.html" class="header__title">Wide Range Metals</a>
                     </div>
                     <div class="header__right-side">
+                        <a href="#"><img class="search_icon-mobile" src="img/search_icon.svg" alt="" srcset=""></a>
                         <div class="header__top-right">
-                            <a href="#" class="shopping"><img class="cart_icon" src="img/cart_icon.svg" alt="">Shopping
-                                cart<span class="cart_count">0</span></a>
+                            <a href="#" class="shopping"><img class="cart_icon" src="img/cart_icon.svg" alt=""><span
+                                    class="shopping_txt">
+                                    Shopping cart</span><span class="cart_count">0</span></a>
+
+                        </div>
+                        <div class="header__top-search">
+                            <div class="search__inner">
+                                <input type="text" class="search__input" placeholder="Search for goods">
+                                <!-- SEARCH BAR CLOSE BTN -->
+                                <a href="#" class="search__close"><span class="close__x">X</span></a>
+                                <a class="search__btn" href="#">
+                                    <img class="search__btn-icon" src="img/search_icon.svg" alt="" srcset="">
+                                </a>
+                            </div>
 
                         </div>
                         <ul class="header__content-ul">
@@ -39,9 +53,20 @@
                             <li class="header__content-item"><a class="menu__link" href="#">Metal powders</a></li>
                             <li class="header__content-item"><a class="menu__link" href="#">Hard from metals</a></li>
                             <li class="header__content-item"><a class="menu__link" href="#">Precious Metals</a></li>
-                            <li class="header__content-item"><a class="menu__link" href="#">About us</a></li>
+                            <li class="header__content-item"><a class="menu__link" href="about.html">About us</a></li>
                             <li class="header__content-item"><a class="menu__link" href="#">Contacts</a></li>
                         </ul>
+
+                        <div class="header__side_menu">
+                            <ul class="header__side_ul">
+                                <!-- <li class="header__content-item"><a class="menu__link selected__page" href="#">Home</a></li> -->
+                                <li><a href="category.html">Metalpowders</a></li>
+                                <li><a href="#">Hard from metals</a></li>
+                                <li><a href="#">Precious Metals</a></li>
+                                <li><a href="about.html">About us</a> </li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -54,16 +79,20 @@
 
         <section class="category__products products">
             <div class="container">
-                <div class="breadcrumb">
-                    <ul class="breadcrumb__nav">
-                        <li><a class="nav__parent" href="index.html">Home</a></li>
-                        <li><img src="img/arrow-right.svg" alt="" srcset=""></li>
-                        <li>
-                            <p class="nav__current">Metal powders</p>
-                        </li>
-                    </ul>
+                <div class="category__h">
+                    <div class="breadcrumb category__breadcrumb">
+                        <ul class="breadcrumb__nav">
+                            <li><a class="nav__parent" href="index.html">Home</a></li>
+                            <li><img src="img/arrow-right.svg" alt="" srcset=""></li>
+                            <li>
+                                <p class="nav__current">Metal powders</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="category__title">Metal powders</h1>
                 </div>
-                <h1 class="category_title">Metal powders</h1>
+    
+
                 <div class="products__wrapper category__products_wrapper">
                     <div class="products__item">
                         <div class="item__img-holder">
@@ -203,8 +232,7 @@
         </div>
     </footer>
     <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/slick.js"></script>
-    <script src="js/carousels.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
